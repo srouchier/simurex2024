@@ -19,10 +19,16 @@ git clone https://github.com/srouchier/simurex2024.git
 
 Option 1: follow the [installation instructions](https://www.pymc.io/projects/docs/en/stable/installation.html) on PyMC's website. Check that your setup works by running some of their examples.
 
-Option 2: if you installed Python through Anaconda and use the conda package manager, you can use the environment.yml file provided in the repository.
+Option 2: if you installed Python through Anaconda and use the conda package manager, you can use the environment files provided in the repository. I have generated two yml files, for use whether you're on Windows or Linux:
 
 ```bash
-conda env create -f environment.yml
+conda env create -f environment_win.yml
+```
+
+or
+
+```bash
+conda env create -f environment_linux.yml
 ```
 
 Both options install PyMC and its dependencies in a dedicated environment called pymc_env. You may install PyMC in your base environment or any other if you prefer.
